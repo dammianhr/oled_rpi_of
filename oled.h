@@ -1,4 +1,7 @@
-#include "./Adafruit_GFX.h"
+#include "./gfx.h"
+
+#include "i2cdev.h"
+#include "ofxGPIO.h"
 
 #define BLACK 0
 #define WHITE 1
@@ -95,6 +98,10 @@
 class Adafruit_SSD1306 : public Adafruit_GFX 
 {
  public:
+
+  GPIO* rstPin;
+  I2Cdev * bus;
+
   Adafruit_SSD1306();
 
 	// SPI Init
