@@ -95,14 +95,14 @@
 #define SSD1327_Normal_Display	0xA4
 
 
-class Adafruit_SSD1306 : public Adafruit_GFX 
+class oled : public gfx 
 {
  public:
 
   GPIO* rstPin;
   I2Cdev * bus;
 
-  Adafruit_SSD1306();
+  oled();
 
 	// SPI Init
   boolean init(int8_t DC, int8_t RST, int8_t CS, uint8_t OLED_TYPE);

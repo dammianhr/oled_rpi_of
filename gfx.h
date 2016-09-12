@@ -1,10 +1,10 @@
 #define swap(a, b) { int16_t t = a; a = b; b = t; }
 
-//class Adafruit_GFX : public Print {
-class Adafruit_GFX {
+//class gfx : public Print {
+class gfx {
  public:
 
-  //Adafruit_GFX();
+  //gfx();
   // i have no idea why we have to formally call the constructor. kinda sux
   void constructor(int16_t w, int16_t h);
 
